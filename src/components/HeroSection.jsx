@@ -22,9 +22,9 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Chetan",
+                "Full Stack",
                 1000,
-                "Web Developer",
+                "AWS Expert",
                 1000,
                 "Front-end",
                 1000,
@@ -32,28 +32,49 @@ const HeroSection = () => {
                 1000,
               ]}
               wrapper="span"
-              speed={50} 
+              speed={50}
               repeat={Infinity}
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          In the past I completed a 3 month internship as a Full Stack Developer role
+            Full Stack Developer with 1.8+ years of hands-on experience in React, JavaScript, Node.js, and PostgreSQL, along with experience in AWS Services.
           </p>
           <div>
-            <Link
+            {/* <Link
               href="/#contact"
               className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
               Hire Me
-            </Link>
-            <Link
-              href="/https://drive.google.com/file/d/1VE_5_OXePzmc8vrdhpw3-TZYX9XQ14og/view?usp=sharing"
-              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+            </Link> */}
+            <button
+              onClick={() => {
+                // 1. URL for the file (view)
+                const viewUrl = "https://drive.google.com/file/d/1zhwY6hM_0BuvlRBsvNWJC1bsDwcvXKsz/view?usp=sharing";
+
+                // 2. URL for direct download
+                const fileUrl = "https://drive.google.com/uc?export=download&id=1zhwY6hM_0BuvlRBsvNWJC1bsDwcvXKsz";
+
+                // 3. Open the file in a new tab (view mode)
+                window.open(viewUrl, "_blank");
+
+                // 4. Trigger the download (background process)
+                const link = document.createElement("a");
+                link.href = fileUrl;
+                link.download = ""; // Optional: specify filename
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
-              </span>
-            </Link>
+              Resume
+            </button>
+
+
+
+
+
+
           </div>
         </motion.div>
         <motion.div
@@ -62,9 +83,9 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#181818] w-[350px] h-[350px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/chetan_passport photo.jpeg"
+              src="/photo2.jpg"
               alt="hero image"
               className="absolute rounded-full transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={300}

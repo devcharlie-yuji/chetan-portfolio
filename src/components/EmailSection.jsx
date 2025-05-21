@@ -15,12 +15,15 @@ const EmailSection = () => {
         <h5 className="text-xl font-bold text-white my-2">
           Let`&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
-        </p>
+        <div className="text-[#ADB7BE] mb-4 max-w-md space-y-4">
+          <p className="text-[#ADB7BE] mb-4 max-w-md">
+            I'm actively seeking new opportunities where I can apply my 1.8+ years of experience as a Full Stack Developer specializing in React, Node.js, PostgreSQL, and AWS.
+            I build scalable, responsive applications with a focus on performance and real-time data using tools like Lambda, API Gateway, and DynamoDB.
+
+          </p>
+
+        </div>
+
         <div className="socials flex flex-row gap-2">
           <Link href="github.com">
             {/* <Image src={GithubIcon} alt="Github Icon" /> */}
