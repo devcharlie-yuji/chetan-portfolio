@@ -17,7 +17,7 @@ const EmailSection = () => {
         </h5>
         <div className="text-[#ADB7BE] mb-4 max-w-md space-y-4">
           <p className="text-[#ADB7BE] mb-4 max-w-md">
-            I'm actively seeking new opportunities where I can apply my 1.8+ years of experience as a Full Stack Developer specializing in React, Node.js, PostgreSQL, and AWS.
+            I&apos;m actively seeking new opportunities where I can apply my 1.8+ years of experience as a Full Stack Developer specializing in React, Node.js, PostgreSQL, and AWS.
             I build scalable, responsive applications with a focus on performance and real-time data using tools like Lambda, API Gateway, and DynamoDB.
 
           </p>
